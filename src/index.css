@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .animate-slide-in {
+    animation: slide-in 350ms ease-out both;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
